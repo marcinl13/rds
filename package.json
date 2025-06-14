@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "exports": {
+    "./atoms": {
+      "types": "./dist/components/atoms/index.d.ts",
+      "import": "./dist/components/atoms/index.js"
+    },
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"

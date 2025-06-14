@@ -5,7 +5,7 @@
 Install the dependencies:
 
 ```bash
-pnpm install
+yarn install
 ```
 
 ## Get started
@@ -13,13 +13,19 @@ pnpm install
 Build the library:
 
 ```bash
-pnpm build
+yarn build
 ```
 
 Build the library in watch mode:
 
 ```bash
-pnpm dev
+yarn dev
+```
+
+Storybook in watch mode:
+
+```bash
+yarn storybook
 ```
 
 ### Notes

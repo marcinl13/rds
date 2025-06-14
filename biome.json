@@ -8,12 +8,15 @@
     "clientKind": "git",
     "useIgnoreFile": true
   },
+  "files": {
+    "ignore": [".storybook"]
+  },
   "formatter": {
     "indentStyle": "space"
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single"
+      "quoteStyle": "double"
     }
   },
   "css": {
@@ -24,7 +27,10 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "a11y": {
+        "noLabelWithoutControl": "off"
+      }
     }
   }
 }

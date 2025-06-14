@@ -21,3 +21,7 @@ Build the library in watch mode:
 ```bash
 pnpm dev
 ```
+
+### Notes
+
+- https://classic.yarnpkg.com/en/docs/cli/add#toc-adding-dependencies

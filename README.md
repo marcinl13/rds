@@ -1,5 +1,12 @@
 # Rslib project
 
+## package installation
+
+```bash
+yarn add rds@https://github.com/marcinl13/rds
+
+```
+
 ## Setup
 
 Install the dependencies:

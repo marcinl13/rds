@@ -9,7 +9,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "ignore": [".storybook"]
+    "ignore": [".storybook", "dist"]
   },
   "formatter": {
     "indentStyle": "space"

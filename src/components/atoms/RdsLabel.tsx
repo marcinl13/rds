@@ -1,5 +1,5 @@
-import cn from "classnames";
 import { type VariantProps, cva } from "class-variance-authority";
+import cn from "classnames";
 
 const labelVariants = cva("block", {
   variants: {

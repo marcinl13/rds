@@ -15,6 +15,7 @@ export default defineConfig({
     },
   ],
   output: {
+    minify: true,
     target: "web",
   },
   plugins: [pluginReact()],

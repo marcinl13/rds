@@ -1,1 +1,1 @@
-import{RdsLabel as s}from"./RdsLabel.js";import{RdsInput as o}from"./RdsInput.js";export{o as RdsInput,s as RdsLabel};
+import{RdsLabel as t}from"./RdsLabel.js";import{RdsInput as o}from"./RdsInput.js";import{RdsButton as s}from"./RdsButton.js";export{s as RdsButton,o as RdsInput,t as RdsLabel};

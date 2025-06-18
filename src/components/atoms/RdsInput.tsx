@@ -2,12 +2,9 @@ import { type VariantProps, cva } from "class-variance-authority";
 import cn from "classnames";
 
 const inputVariants = cva(
-  "block border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 disabled:opacity-50 disabled:pointer-events-none",
+  "block bg-base-100 border border-base-300 text-base-content focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none",
   {
     variants: {
-      _variant: {
-        primary: "focus:ring-indigo-500 focus:border-indigo-500",
-      },
       _size: {
         small: "px-3 py-1 text-sm",
         medium: "px-4 py-2 text-base",
@@ -22,7 +19,6 @@ const inputVariants = cva(
     },
 
     defaultVariants: {
-      _variant: "primary",
       _size: "medium",
       _radius: "medium",
     },
@@ -32,11 +28,10 @@ const inputVariants = cva(
 type InputVariants = VariantProps<typeof inputVariants>;
 type InputProps = React.ComponentProps<"input"> & InputVariants;
 
-export const RdsInput: React.FC<InputProps> = ({ _variant, _size, _radius, className, ...props }) => (
+export const RdsInput: React.FC<InputProps> = ({ _size, _radius, className, ...props }) => (
   <input
     className={cn(
       inputVariants({
-        _variant,
         _size,
         _radius,
       }),

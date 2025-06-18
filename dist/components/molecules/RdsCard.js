@@ -1,0 +1,1 @@
+import{jsx as r}from"react/jsx-runtime";import e from"classnames";let s=({className:s,children:a,...d})=>r("div",{className:e("max-w-sm p-6 bg-base-100 card-border border-base-300 border rounded-lg shadow-sm",s),...d,children:a});export{s as RdsCard};

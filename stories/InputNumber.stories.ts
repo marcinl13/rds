@@ -26,7 +26,6 @@ type Story = StoryObj<typeof meta>;
 
 const defaultArgs = {
   value: 10,
-  onChange: () => ({}),
   _size: "medium",
   placeholder: "Placeholder",
 };

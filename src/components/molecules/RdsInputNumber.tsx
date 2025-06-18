@@ -3,14 +3,14 @@ import { RdsInput } from "../atoms";
 
 type InputNumberProps = ComponentProps<typeof RdsInput> & {
   value: number | string;
-  onChange?: (value: number | string) => void;
+  onChangeValue?: (value: number | string) => void;
   allowDecimal?: boolean;
   allowNegative?: boolean;
 };
 
 export const RdsInputNumber: React.FC<InputNumberProps> = ({
   value,
-  onChange = () => ({}),
+  onChangeValue = () => ({}),
   allowDecimal = true,
   allowNegative = false,
   ...props
@@ -31,7 +31,7 @@ export const RdsInputNumber: React.FC<InputNumberProps> = ({
 
     if (isValid || raw === "") {
       setInternalValue(raw);
-      onChange(raw === "" ? "" : allowDecimal ? Number.parseFloat(raw) : Number.parseInt(raw));
+      onChangeValue(raw === "" ? "" : allowDecimal ? Number.parseFloat(raw) : Number.parseInt(raw));
     }
   };
 

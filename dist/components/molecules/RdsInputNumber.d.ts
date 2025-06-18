@@ -2,7 +2,7 @@ import { type ComponentProps } from "react";
 import { RdsInput } from "../atoms";
 type InputNumberProps = ComponentProps<typeof RdsInput> & {
     value: number | string;
-    onChange?: (value: number | string) => void;
+    onChangeValue?: (value: number | string) => void;
     allowDecimal?: boolean;
     allowNegative?: boolean;
 };

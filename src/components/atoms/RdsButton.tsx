@@ -2,11 +2,19 @@ import { type VariantProps, cva } from "class-variance-authority";
 import cn from "classnames";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none cursor-pointer",
+  "inline-flex items-center justify-center font-medium transition-colors focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer",
   {
     variants: {
       _variant: {
-        primary: "bg-gray-600 text-white hover:bg-gray-700",
+        primary: "bg-primary text-primary-content hover:bg-primary-hover",
+        secondary:
+          "bg-secondary text-secondary-content hover:bg-secondary-hover",
+        accent: "bg-accent text-accent-content hover:bg-accent-hover",
+        neutral: "bg-neutral text-neutral-content hover:bg-neutral-hover",
+        info: "bg-info text-info-content hover:bg-info-hover",
+        success: "bg-success text-success-content hover:bg-success-hover",
+        warning: "bg-warning text-warning-content hover:bg-warning-hover",
+        error: "bg-error text-error-content hover:bg-error-hover",
       },
       _size: {
         small: "px-3 py-1 text-sm",

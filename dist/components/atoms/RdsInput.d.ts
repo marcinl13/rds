@@ -1,6 +1,5 @@
 import { type VariantProps } from "class-variance-authority";
 declare const inputVariants: (props?: ({
-    _variant?: "primary" | null | undefined;
     _size?: "small" | "medium" | "large" | null | undefined;
     _radius?: "small" | "medium" | "large" | "full" | null | undefined;
 } & import("class-variance-authority/types").ClassProp) | undefined) => string;

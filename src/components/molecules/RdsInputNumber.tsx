@@ -2,14 +2,14 @@ import { type ChangeEvent, type ComponentProps, useState } from "react";
 import { RdsInput } from "../atoms";
 
 type InputNumberProps = ComponentProps<typeof RdsInput> & {
-  value: number | string;
+  value?: number | string;
   onChangeValue?: (value: number | string) => void;
   allowDecimal?: boolean;
   allowNegative?: boolean;
 };
 
 export const RdsInputNumber: React.FC<InputNumberProps> = ({
-  value,
+  value = "",
   onChangeValue = () => ({}),
   allowDecimal = true,
   allowNegative = false,

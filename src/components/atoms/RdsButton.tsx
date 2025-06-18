@@ -7,8 +7,7 @@ const buttonVariants = cva(
     variants: {
       _variant: {
         primary: "bg-primary text-primary-content hover:bg-primary-hover",
-        secondary:
-          "bg-secondary text-secondary-content hover:bg-secondary-hover",
+        secondary: "bg-secondary text-secondary-content hover:bg-secondary-hover",
         accent: "bg-accent text-accent-content hover:bg-accent-hover",
         neutral: "bg-neutral text-neutral-content hover:bg-neutral-hover",
         info: "bg-info text-info-content hover:bg-info-hover",
@@ -41,13 +40,7 @@ const buttonVariants = cva(
 type ButtonVariants = VariantProps<typeof buttonVariants>;
 type ButtonProps = React.ComponentProps<"button"> & ButtonVariants;
 
-export const RdsButton: React.FC<ButtonProps> = ({
-  _variant,
-  _size,
-  _radius,
-  className,
-  ...props
-}) => {
+export const RdsButton: React.FC<ButtonProps> = ({ _variant, _size, _radius, className, ...props }) => {
   return (
     <button
       className={cn(

@@ -32,13 +32,7 @@ const inputVariants = cva(
 type InputVariants = VariantProps<typeof inputVariants>;
 type InputProps = React.ComponentProps<"input"> & InputVariants;
 
-export const RdsInput: React.FC<InputProps> = ({
-  _variant,
-  _size,
-  _radius,
-  className,
-  ...props
-}) => (
+export const RdsInput: React.FC<InputProps> = ({ _variant, _size, _radius, className, ...props }) => (
   <input
     className={cn(
       inputVariants({

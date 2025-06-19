@@ -1,11 +1,8 @@
 import { type VariantProps, cva } from "class-variance-authority";
 import cn from "classnames";
 
-const labelVariants = cva("block", {
+const labelVariants = cva("block text-base-content", {
   variants: {
-    _intent: {
-      gray: "text-gray-900",
-    },
     _size: {
       small: "py-1 text-sm",
       medium: "py-2 text-base",
@@ -14,7 +11,6 @@ const labelVariants = cva("block", {
   },
 
   defaultVariants: {
-    _intent: "gray",
     _size: "medium",
   },
 });
@@ -22,14 +18,18 @@ const labelVariants = cva("block", {
 type LabelVariants = VariantProps<typeof labelVariants>;
 type LabelProps = React.ComponentProps<"label"> & LabelVariants;
 
-export const RdsLabel: React.FC<LabelProps> = ({ _intent, _size, className, children, ...props }) => (
+export const RdsLabel: React.FC<LabelProps> = ({
+  _size,
+  className,
+  children,
+  ...props
+}) => (
   <label
     className={cn(
       labelVariants({
-        _intent,
         _size,
       }),
-      className,
+      className
     )}
     {...props}
   >

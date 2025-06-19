@@ -59,6 +59,4 @@ jobs:
           generate_release_notes: true
           draft: true
           make_latest: "false"
-          files: |
-            *              
-            dist/**
+          files: dist

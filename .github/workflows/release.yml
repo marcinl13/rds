@@ -50,13 +50,18 @@ jobs:
           git tag "$TAG"
           git push origin "$TAG"
 
-      - name: Create GitHub Release with dist/
-        if: steps.check_tag.outputs.exists == 'false'
-        uses: softprops/action-gh-release@v2
+      # - name: Create GitHub Release with dist/
+      #   if: steps.check_tag.outputs.exists == 'false'
+      #   uses: softprops/action-gh-release@v2
+      #   with:
+      #     tag_name: "v${{ steps.get_version.outputs.version }}"
+      #     name: "v${{ steps.get_version.outputs.version }}"
+      #     generate_release_notes: true
+      #     draft: true
+      #     make_latest: "false"
+      #     files: dist
+      - name: Release to GitHub Actions Market
+        uses: technote-space/release-github-actions@v6
         with:
-          tag_name: "v${{ steps.get_version.outputs.version }}"
-          name: "v${{ steps.get_version.outputs.version }}"
-          generate_release_notes: true
-          draft: true
-          make_latest: "false"
-          files: dist
+          PACKAGE_MANAGER: yarn
+          BUILD_COMMAND: yarn build

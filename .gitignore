@@ -5,9 +5,12 @@
 
 # Dist
 node_modules
+dist/
 storybook-static
 
 # IDE
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+!.github/workflows/

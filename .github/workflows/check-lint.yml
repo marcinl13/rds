@@ -1,11 +1,11 @@
-name: Biome lint check
+name: Biome lint
 
 on:
   push:
 
 jobs:
   check-lint:
-    name: Biome lint check
+    name: check
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +21,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       
-      - name: check
+      - name: Biome lint check
         run: yarn run check
 

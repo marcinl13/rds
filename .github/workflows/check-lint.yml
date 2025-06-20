@@ -1,11 +1,11 @@
-name: Biome lint
+name: Biome lint check
 
 on:
   push:
 
 jobs:
   check-lint:
-    name: check
+    name: Biome lint check
     runs-on: ubuntu-latest
 
     steps:

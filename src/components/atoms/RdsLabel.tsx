@@ -18,18 +18,13 @@ const labelVariants = cva("block text-base-content", {
 type LabelVariants = VariantProps<typeof labelVariants>;
 type LabelProps = React.ComponentProps<"label"> & LabelVariants;
 
-export const RdsLabel: React.FC<LabelProps> = ({
-  _size,
-  className,
-  children,
-  ...props
-}) => (
+export const RdsLabel: React.FC<LabelProps> = ({ _size, className, children, ...props }) => (
   <label
     className={cn(
       labelVariants({
         _size,
       }),
-      className
+      className,
     )}
     {...props}
   >

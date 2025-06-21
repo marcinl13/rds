@@ -7,12 +7,12 @@ export const Example = () => {
       <RdsCard className="flex flex-col gap-3 min-w-100">
         <div>
           <RdsLabel htmlFor="input-example" children="Text input example" />
-          <RdsInput name="input-example" placeholder="text" className="w-full" />
+          <RdsInput name="input-example" placeholder="text" value="Hello" className="w-full" />
         </div>
 
         <div>
           <RdsLabel htmlFor="input-example" children="Numerical input example" />
-          <RdsInputNumber name="input-example" placeholder="amount" className="w-full" />
+          <RdsInputNumber name="input-example" placeholder="amount" value="12" className="w-full" />
         </div>
 
         <div>

@@ -3,25 +3,25 @@ import { RdsCard, RdsInputNumber } from "../../src/components/molecules";
 
 export const Example = () => {
   return (
-    <section className="flex flex-wrap gap-4 bg-base-200 w-full p-4">
+    <section className="flex flex-wrap gap-4 align-items-start bg-base-200 w-full p-4">
       <RdsCard className="flex flex-col gap-3 min-w-100">
         <div>
-          <RdsLabel htmlFor="input-example" children="Text input example" />
+          <RdsLabel htmlFor="input-example">Text input example</RdsLabel>
           <RdsInput name="input-example" placeholder="text" value="Hello" className="w-full" />
         </div>
 
         <div>
-          <RdsLabel htmlFor="input-example" children="Disabled input example" />
+          <RdsLabel htmlFor="input-example">Disabled input example</RdsLabel>
           <RdsInput name="input-example" value="Disabled" className="w-full" disabled />
         </div>
 
         <div>
-          <RdsLabel htmlFor="input-example" children="Numerical input example" />
+          <RdsLabel htmlFor="input-example">Numerical input example</RdsLabel>
           <RdsInputNumber name="input-example" placeholder="amount" value="12" className="w-full" />
         </div>
 
         <div>
-          <RdsLabel htmlFor="select-example" children="Select example" />
+          <RdsLabel htmlFor="select-example">Select example</RdsLabel>
           <RdsSelect name="select-example" className="w-full">
             <option value="APEX">APEX</option>
             <option value="Multi Cloud">Multi Cloud</option>
@@ -31,7 +31,7 @@ export const Example = () => {
         </div>
 
         <div>
-          <RdsLabel htmlFor="select-example" children="Select example" />
+          <RdsLabel htmlFor="select-example">Disabled Select example</RdsLabel>
           <RdsSelect name="select-example" className="w-full" disabled>
             <option value="APEX">APEX</option>
             <option value="Multi Cloud">Multi Cloud</option>

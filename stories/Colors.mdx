@@ -1,92 +1,29 @@
 import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
- 
-<Meta title="Color Palette/Default" />
 
-### Base theme
+<Meta title="Color Palette" />
 
+### default-theme
 <ColorPalette>
-  <ColorItem
-    title="Base"
-    colors={{ 
-      100: 'oklch(100% 0 0)', 
-      200: 'oklch(98% 0 0)', 
-      300: 'oklch(95% 0 0)' 
-    }}
-  />
-  <ColorItem
-    title="Base content"
-    colors={{ _: 'oklch(21% 0.006 285.885)' }}
-  />
+  <ColorItem title="Base" colors={{ "100": 'oklch(100% 0 0)', "200": 'oklch(98% 0 0)', "300": 'oklch(95% 0 0)', "content": 'oklch(21% 0.006 285.885)' }} />
+  <ColorItem title="Primary" colors={{ "_": 'oklch(45% 0.24 277.023)', "hover": 'oklch(38% 0.24 277.023)', "content": 'oklch(93% 0.034 272.788)' }} />
+  <ColorItem title="Secondary" colors={{ "_": 'oklch(65% 0.241 354.308)', "hover": 'oklch(58% 0.241 354.308)', "content": 'oklch(94% 0.028 342.258)' }} />
+  <ColorItem title="Accent" colors={{ "_": 'oklch(77% 0.152 181.912)', "hover": 'oklch(70% 0.152 181.912)', "content": 'oklch(38% 0.063 188.416)' }} />
+  <ColorItem title="Neutral" colors={{ "_": 'oklch(14% 0.005 285.823)', "hover": 'oklch(30% 0.005 285.823)', "content": 'oklch(92% 0.004 286.32)' }} />
+  <ColorItem title="Info" colors={{ "_": 'oklch(74% 0.16 232.661)', "hover": 'oklch(67% 0.16 232.661)', "content": 'oklch(29% 0.066 243.157)' }} />
+  <ColorItem title="Success" colors={{ "_": 'oklch(76% 0.177 163.223)', "hover": 'oklch(69% 0.177 163.223)', "content": 'oklch(37% 0.077 168.94)' }} />
+  <ColorItem title="Warning" colors={{ "_": 'oklch(82% 0.189 84.429)', "hover": 'oklch(75% 0.189 84.429)', "content": 'oklch(41% 0.112 45.904)' }} />
+  <ColorItem title="Error" colors={{ "_": 'oklch(71% 0.194 13.428)', "hover": 'oklch(64% 0.194 13.428)', "content": 'oklch(27% 0.105 12.094)' }} />
+</ColorPalette>
 
-  <ColorItem
-    title="Primary"
-    colors={{ 
-      base: 'oklch(45% 0.24 277.023)', 
-      hover: 'oklch(38% 0.24 277.023)', 
-      content: 'oklch(93% 0.034 272.788)' 
-    }}
-  />
-
-  <ColorItem
-    title="Secondary"
-    colors={{ 
-      base: 'oklch(65% 0.241 354.308)', 
-      hover: 'oklch(58% 0.241 354.308)', 
-      content: 'oklch(94% 0.028 342.258)' 
-    }}
-  />
-
-  <ColorItem
-    title="Accent"
-    colors={{ 
-      base: 'oklch(77% 0.152 181.912)', 
-      hover: 'oklch(70% 0.152 181.912)', 
-      content: 'oklch(38% 0.063 188.416)' 
-    }}
-  />
-
-  <ColorItem
-    title="Neutral"
-    colors={{ 
-      base: 'oklch(14% 0.005 285.823)', 
-      hover: 'oklch(30% 0.005 285.823)', 
-      content: 'oklch(92% 0.004 286.32)' 
-    }}
-  />
-
-  <ColorItem
-    title="Info"
-    colors={{ 
-      base: 'oklch(74% 0.16 232.661)', 
-      hover: 'oklch(67% 0.16 232.661)', 
-      content: 'oklch(29% 0.066 243.157)' 
-    }}
-  />
-
-  <ColorItem
-    title="Success"
-    colors={{ 
-      base: 'oklch(76% 0.177 163.223)', 
-      hover: 'oklch(69% 0.177 163.223)', 
-      content: 'oklch(37% 0.077 168.94)' 
-    }}
-  />
-
-  <ColorItem
-    title="Warning"
-    colors={{ 
-      base: 'oklch(82% 0.189 84.429)', 
-      hover: 'oklch(75% 0.189 84.429)', 
-      content: 'oklch(41% 0.112 45.904)' 
-    }}
-  />
-
-  <ColorItem
-    title="Error"
-    colors={{ 
-      base: 'oklch(71% 0.194 13.428)', 
-      hover: 'oklch(64% 0.194 13.428)', 
-      content: 'oklch(27% 0.105 12.094)' 
-    }}
-  />
+### forest-theme
+<ColorPalette>
+  <ColorItem title="Base" colors={{ "100": 'oklch(20.84% 0.008 17.911)', "200": 'oklch(18.522% 0.007 17.911)', "300": 'oklch(16.203% 0.007 17.911)', "content": 'oklch(83.768% 0.001 17.911)' }} />
+  <ColorItem title="Primary" colors={{ "_": 'oklch(68.628% 0.185 148.958)', "hover": 'oklch(61.628% 0.185 148.958)', "content": 'oklch(0% 0 0)' }} />
+  <ColorItem title="Secondary" colors={{ "_": 'oklch(69.776% 0.135 168.327)', "hover": 'oklch(62.776% 0.135 168.327)', "content": 'oklch(13.955% 0.027 168.327)' }} />
+  <ColorItem title="Accent" colors={{ "_": 'oklch(70.628% 0.119 185.713)', "hover": 'oklch(63.628% 0.119 185.713)', "content": 'oklch(14.125% 0.023 185.713)' }} />
+  <ColorItem title="Neutral" colors={{ "_": 'oklch(30.698% 0.039 171.364)', "hover": 'oklch(27.698% 0.039 171.364)', "content": 'oklch(86.139% 0.007 171.364)' }} />
+  <ColorItem title="Info" colors={{ "_": 'oklch(72.06% 0.191 231.6)', "hover": 'oklch(65.06% 0.191 231.6)', "content": 'oklch(0% 0 0)' }} />
+  <ColorItem title="Success" colors={{ "_": 'oklch(64.8% 0.15 160)', "hover": 'oklch(57.8% 0.15 160)', "content": 'oklch(0% 0 0)' }} />
+  <ColorItem title="Warning" colors={{ "_": 'oklch(84.71% 0.199 83.87)', "hover": 'oklch(77.71% 0.199 83.87)', "content": 'oklch(0% 0 0)' }} />
+  <ColorItem title="Error" colors={{ "_": 'oklch(71.76% 0.221 22.18)', "hover": 'oklch(64.76% 0.221 22.18)', "content": 'oklch(0% 0 0)' }} />
 </ColorPalette>

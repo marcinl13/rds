@@ -38,4 +38,8 @@
   --color-error: oklch(71% 0.194 13.428);
   --color-error-hover: oklch(64% 0.194 13.428);
   --color-error-content: oklch(27% 0.105 12.094);
+
+  --color-input: oklch(100% 0 0);
+  --color-input-border: oklch(95% 0 0);
+  --color-input-content: oklch(21% 0.006 285.885);
 }

@@ -38,6 +38,10 @@
   --color-error: oklch(71% 0.194 13.428);
   --color-error-hover: oklch(64% 0.194 13.428);
   --color-error-content: oklch(27% 0.105 12.094);
+
+  --color-input: oklch(100% 0 0);
+  --color-input-border: oklch(95% 0 0);
+  --color-input-content: oklch(21% 0.006 285.885);
 }
 
 .theme-forest {
@@ -77,6 +81,10 @@
   --color-error: oklch(71.76% 0.221 22.18);
   --color-error-hover: oklch(64.76% 0.221 22.18);
   --color-error-content: oklch(0% 0 0);
+
+  --color-input: oklch(20.84% 0.008 17.911);
+  --color-input-border: oklch(83.768% 0.001 17.911);
+  --color-input-content: oklch(83.768% 0.001 17.911);
 }
 
 .docs-story {

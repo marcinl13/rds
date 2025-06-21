@@ -11,6 +11,11 @@ export const Example = () => {
         </div>
 
         <div>
+          <RdsLabel htmlFor="input-example" children="Disabled input example" />
+          <RdsInput name="input-example" value="Disabled" className="w-full" disabled />
+        </div>
+
+        <div>
           <RdsLabel htmlFor="input-example" children="Numerical input example" />
           <RdsInputNumber name="input-example" placeholder="amount" value="12" className="w-full" />
         </div>
@@ -18,6 +23,16 @@ export const Example = () => {
         <div>
           <RdsLabel htmlFor="select-example" children="Select example" />
           <RdsSelect name="select-example" className="w-full">
+            <option value="APEX">APEX</option>
+            <option value="Multi Cloud">Multi Cloud</option>
+            <option value="Cloud Solutions">Cloud Solutions</option>
+            <option value="Energy">Energy</option>
+          </RdsSelect>
+        </div>
+
+        <div>
+          <RdsLabel htmlFor="select-example" children="Select example" />
+          <RdsSelect name="select-example" className="w-full" disabled>
             <option value="APEX">APEX</option>
             <option value="Multi Cloud">Multi Cloud</option>
             <option value="Cloud Solutions">Cloud Solutions</option>

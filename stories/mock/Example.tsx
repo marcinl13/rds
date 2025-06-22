@@ -1,9 +1,9 @@
 import { RdsButton, RdsInput, RdsLabel, RdsSelect } from "../../src/components/atoms";
-import { RdsCard, RdsInputNumber } from "../../src/components/molecules";
+import { RdsCard, RdsInputNumber, RdsSelectSearch } from "../../src/components/molecules";
 
 export const Example = () => {
   return (
-    <section className="flex flex-wrap gap-4 align-items-start bg-base-200 w-full p-4">
+    <section className="flex flex-wrap gap-4 align-items-start bg-base-200 w-full p-4 mb-20">
       <RdsCard className="flex flex-col gap-3 min-w-100">
         <div>
           <RdsLabel htmlFor="input-example">Text input example</RdsLabel>
@@ -38,6 +38,18 @@ export const Example = () => {
             <option value="Cloud Solutions">Cloud Solutions</option>
             <option value="Energy">Energy</option>
           </RdsSelect>
+        </div>
+
+        <div>
+          <RdsLabel htmlFor="select-example">Disabled Select example</RdsLabel>
+          <RdsSelectSearch
+            name="select-example"
+            options={[
+              { value: "chocolate", label: "Chocolate" },
+              { value: "strawberry", label: "Strawberry" },
+              { value: "vanilla", label: "Vanilla" },
+            ]}
+          />
         </div>
 
         <RdsButton>Button</RdsButton>

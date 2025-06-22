@@ -1,0 +1,1 @@
+import{jsx as e}from"react/jsx-runtime";import r from"react-select";let t=t=>e(r,{...t});export{t as RdsSelectSearch};

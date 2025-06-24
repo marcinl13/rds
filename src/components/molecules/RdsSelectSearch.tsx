@@ -18,7 +18,6 @@ export const RdsSelectSearch: React.FC<SelectProps> = (props) => {
           paddingBlock: "calc(var(--spacing) * .4)",
           paddingLeft: "calc(var(--spacing) * 4)",
           boxShadow: "none",
-          //
           ":hover": {
             borderColor: "var(--color-input-border)",
             boxShadow: "none",
@@ -36,6 +35,29 @@ export const RdsSelectSearch: React.FC<SelectProps> = (props) => {
         singleValue: (baseStyles) => ({
           ...baseStyles,
           color: "var(--color-input-content)",
+        }),
+        menu: (baseStyles) => ({
+          ...baseStyles,
+          backgroundColor: "var(--color-input)",
+          color: "var(--color-input-content)",
+          border: "1px solid var(--color-input-border)",
+          borderColor: "var(--color-input-border)",
+        }),
+        option: (baseStyles) => ({
+          ...baseStyles,
+          backgroundColor: "var(--color-input)",
+          ":hover": {
+            backgroundColor: "gray",
+            color: "white",
+          },
+          ":active": {
+            backgroundColor: "gray",
+            color: "white",
+          },
+          ":first-of-type": {
+            backgroundColor: "gray",
+            color: "white",
+          },
         }),
       }}
       {...props}

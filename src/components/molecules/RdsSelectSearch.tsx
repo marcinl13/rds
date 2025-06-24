@@ -1,5 +1,4 @@
 import Select from "react-select";
-import cn from "classnames";
 
 type SelectProps = React.ComponentProps<typeof Select>;
 
@@ -58,6 +57,10 @@ export const RdsSelectSearch: React.FC<SelectProps> = (props) => {
             backgroundColor: "gray",
             color: "white",
           },
+        }),
+        valueContainer: (baseStyles) => ({
+          ...baseStyles,
+          padding: 1,
         }),
       }}
       {...props}

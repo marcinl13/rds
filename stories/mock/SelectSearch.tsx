@@ -8,7 +8,7 @@ const options = [
 
 export const SelectSearch: React.FC = () => {
   return (
-    <section className="h-80">
+    <section className="h-80 w-80">
       <RdsSelectSearch options={options} />
     </section>
   );

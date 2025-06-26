@@ -70,4 +70,4 @@ jobs:
           files: dist.tar.gz
           generate_release_notes: true
           make_latest: false
-          draft: true
+          prerelease: true

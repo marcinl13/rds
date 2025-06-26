@@ -61,7 +61,6 @@ jobs:
         run: |
           tar -czf dist.tar.gz dist \
             --exclude='./storybook' \
-            --exclude='./storybook-static' \
             --exclude='*.stories.js' \
             --exclude='*.stories.tsx' \
             --exclude='./stories'
@@ -75,4 +74,4 @@ jobs:
           files: dist.tar.gz
           generate_release_notes: true
           make_latest: false
-          prerelease: true
+          draft: true

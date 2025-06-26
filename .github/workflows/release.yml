@@ -59,11 +59,7 @@ jobs:
 
       - name: Create release artifact
         run: |
-          tar -czf dist.tar.gz dist \
-            --exclude='./storybook' \
-            --exclude='*.stories.js' \
-            --exclude='*.stories.tsx' \
-            --exclude='./stories'
+          tar -czf dist.tar.gz dist
 
       - name: Upload release asset
         if: steps.check_tag.outputs.exists == 'false'

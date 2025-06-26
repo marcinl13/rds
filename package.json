@@ -1,6 +1,6 @@
 {
   "name": "rds",
-  "version": "1.7.1f",
+  "version": "1.7.1g",
   "license": "MIT",
   "type": "module",
   "exports": {

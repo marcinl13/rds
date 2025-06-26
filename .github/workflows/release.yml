@@ -67,8 +67,7 @@ jobs:
         with:
           tag_name: "v${{ steps.get_version.outputs.version }}"
           name: "v${{ steps.get_version.outputs.version }}"
-          # files: dist.tar.gz
-          files: "*"
+          files: dist.tar.gz
           generate_release_notes: true
           make_latest: false
           prerelease: true

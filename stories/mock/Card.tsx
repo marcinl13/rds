@@ -10,9 +10,8 @@ export const MockCard: React.FC<React.ComponentProps<typeof RdsCard>> = () => (
 
     <RdsCard.Content>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque
-        voluptate soluta id quidem nihil, sit deserunt iusto a provident facere
-        harum, eius omnis at similique labore possimus! Reiciendis, saepe.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque voluptate soluta id quidem nihil, sit
+        deserunt iusto a provident facere harum, eius omnis at similique labore possimus! Reiciendis, saepe.
       </p>
     </RdsCard.Content>
 

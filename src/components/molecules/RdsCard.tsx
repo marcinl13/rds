@@ -13,7 +13,7 @@ export const RdsCard: React.FC<CardProps> & {
     <div
       className={cn(
         "max-w-sm p-4 bg-base-100 border-base-300 border text-base-content rounded-lg shadow-sm",
-        className
+        className,
       )}
       {...props}
     >

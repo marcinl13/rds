@@ -1,9 +1,11 @@
 {
   "name": "rds",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "license": "MIT",
   "type": "module",
   "exports": {
+    "./theme/default.css": "./dist/theme/default.css",
+    "./theme/forest.css": "./dist/theme/forest.css",
     "./molecules": {
       "types": "./dist/components/molecules/index.d.ts",
       "import": "./dist/components/molecules/index.js"

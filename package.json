@@ -4,7 +4,8 @@
   "license": "MIT",
   "type": "module",
   "exports": {
-    "./theme": "./dist/theme",
+    "./theme/default": "./dist/theme/default.js",
+    "./theme/forest": "./dist/theme/forest.js",
     "./molecules": {
       "types": "./dist/components/molecules/index.d.ts",
       "import": "./dist/components/molecules/index.js"

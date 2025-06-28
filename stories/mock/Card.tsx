@@ -2,7 +2,7 @@ import { RdsButton } from "../../src/components/atoms";
 import { RdsCard } from "../../src/components/molecules";
 
 export const MockCard: React.FC<React.ComponentProps<typeof RdsCard>> = () => (
-  <RdsCard className="min-w-100">
+  <RdsCard className="min-w-100 max-w-sm">
     <RdsCard.Header>
       <RdsCard.Title>Card Title</RdsCard.Title>
       <RdsCard.Description>Brief description or subtitle.</RdsCard.Description>

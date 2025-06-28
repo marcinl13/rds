@@ -11,10 +11,7 @@ export const RdsCard: React.FC<CardProps> & {
 } = ({ className, children, ...props }) => {
   return (
     <div
-      className={cn(
-        "max-w-sm p-4 bg-base-100 border-base-300 border text-base-content rounded-lg shadow-sm",
-        className,
-      )}
+      className={cn("p-4 bg-base-100 border-base-300 border text-base-content rounded-lg shadow-sm", className)}
       {...props}
     >
       {children}

@@ -1,6 +1,6 @@
 {
   "name": "rds",
-  "version": "1.7.3",
+  "version": "1.7.4",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -20,7 +20,9 @@
     "./theme/forest.css": "./dist/theme/forest.css"
   },
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rslib build",
     "build:storybook": "storybook build",
@@ -49,6 +51,7 @@
     "storybook": "^9.0.5",
     "storybook-addon-rslib": "^2.0.0",
     "storybook-react-rsbuild": "^2.0.0",
+    "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3"
   },

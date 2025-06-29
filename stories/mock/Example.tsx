@@ -52,7 +52,7 @@ export const Example = () => {
           />
         </div>
 
-        <RdsButton>Button</RdsButton>
+        <RdsButton className="flex">Button</RdsButton>
       </RdsCard>
 
       <RdsCard className="flex-1 min-w-100 space-y-4 space-x-3">

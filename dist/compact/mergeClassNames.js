@@ -1,0 +1,1 @@
+import r from"classnames";import{twMerge as e}from"tailwind-merge";function m(...o){return e(r(o))}export{m as mergeClassNames};

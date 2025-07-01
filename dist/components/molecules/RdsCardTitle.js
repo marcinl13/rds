@@ -1,0 +1,1 @@
+import{jsx as e}from"react/jsx-runtime";import t from"classnames";let r=({className:r,children:m,...s})=>e("h3",{className:t("text-lg font-semibold",r),...s,children:m});export{r as RdsCardTitle};

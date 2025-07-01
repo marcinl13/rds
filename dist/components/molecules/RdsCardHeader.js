@@ -1,0 +1,1 @@
+import{jsx as r}from"react/jsx-runtime";import e from"classnames";let m=({className:m,children:a,...s})=>r("div",{className:e("mb-4",m),...s,children:a});export{m as RdsCardHeader};

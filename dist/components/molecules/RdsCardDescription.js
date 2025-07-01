@@ -1,0 +1,1 @@
+import{jsx as t}from"react/jsx-runtime";import e from"classnames";let r=({className:r,children:s,...m})=>t("p",{className:e("text-sm text-base-content/70",r),...m,children:s});export{r as RdsCardDescription};

@@ -1,0 +1,1 @@
+import{jsx as r}from"react/jsx-runtime";import e from"classnames";let t=({className:t,children:o,...s})=>r("div",{className:e("pt-4 border-t border-base-content/70",t),...s,children:o});export{t as RdsCardFooter};

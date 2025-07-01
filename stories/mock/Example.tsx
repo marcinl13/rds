@@ -1,5 +1,14 @@
 import { RdsButton, RdsInput, RdsLabel, RdsSelect } from "../../src/components/atoms";
-import { RdsCard, RdsInputNumber, RdsSelectSearch } from "../../src/components/molecules";
+import {
+  RdsCard,
+  RdsCardHeader,
+  RdsCardTitle,
+  RdsCardDescription,
+  RdsCardContent,
+  RdsCardFooter,
+  RdsInputNumber,
+  RdsSelectSearch,
+} from "../../src/components/molecules";
 
 export const Example = () => {
   return (
@@ -138,19 +147,19 @@ export const Example = () => {
       </RdsCard>
 
       <RdsCard className="min-w-100">
-        <RdsCard.Header>
-          <RdsCard.Title>Card Title</RdsCard.Title>
-          <RdsCard.Description>Brief description or subtitle.</RdsCard.Description>
-        </RdsCard.Header>
-        <RdsCard.Content>
+        <RdsCardHeader>
+          <RdsCardTitle>Card Title</RdsCardTitle>
+          <RdsCardDescription>Brief description or subtitle.</RdsCardDescription>
+        </RdsCardHeader>
+        <RdsCardContent>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque voluptate soluta id quidem nihil,
             sit deserunt iusto a provident facere harum, eius omnis at similique labore possimus! Reiciendis, saepe.
           </p>
-        </RdsCard.Content>
-        <RdsCard.Footer className="flex justify-center">
+        </RdsCardContent>
+        <RdsCardFooter className="flex justify-center">
           <RdsButton>Button</RdsButton>
-        </RdsCard.Footer>
+        </RdsCardFooter>
       </RdsCard>
     </section>
   );

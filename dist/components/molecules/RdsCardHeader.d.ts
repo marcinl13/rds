@@ -1,3 +1,3 @@
 type Props = React.HTMLAttributes<HTMLDivElement>;
-export declare const RdsCard: React.FC<Props>;
+export declare const RdsCardHeader: React.FC<Props>;
 export {};

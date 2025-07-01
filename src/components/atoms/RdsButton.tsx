@@ -1,5 +1,5 @@
 import { type VariantProps, cva } from "class-variance-authority";
-import { cn } from "../../compact/classMerge";
+import { mergeClassNames } from "../../compact/mergeClassNames";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center font-medium transition-colors focus:outline-none disabled:opacity-50 disabled:pointer-events-none cursor-pointer",
@@ -7,7 +7,8 @@ const buttonVariants = cva(
     variants: {
       _variant: {
         primary: "bg-primary text-primary-content hover:bg-primary-hover",
-        secondary: "bg-secondary text-secondary-content hover:bg-secondary-hover",
+        secondary:
+          "bg-secondary text-secondary-content hover:bg-secondary-hover",
         accent: "bg-accent text-accent-content hover:bg-accent-hover",
         neutral: "bg-neutral text-neutral-content hover:bg-neutral-hover",
         info: "bg-info text-info-content hover:bg-info-hover",
@@ -34,22 +35,28 @@ const buttonVariants = cva(
       _size: "medium",
       _radius: "medium",
     },
-  },
+  }
 );
 
 type ButtonVariants = VariantProps<typeof buttonVariants>;
 type ButtonProps = React.ComponentProps<"button"> & ButtonVariants;
 
-export const RdsButton: React.FC<ButtonProps> = ({ _variant, _size, _radius, className, ...props }) => {
+export const RdsButton: React.FC<ButtonProps> = ({
+  _variant,
+  _size,
+  _radius,
+  className,
+  ...props
+}) => {
   return (
     <button
-      className={cn(
+      className={mergeClassNames(
         buttonVariants({
           _variant,
           _size,
           _radius,
         }),
-        className,
+        className
       )}
       {...props}
     />

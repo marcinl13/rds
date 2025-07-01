@@ -1,6 +1,6 @@
 import cn from "classnames";
 
-type Props = React.HTMLAttributes<HTMLDivElement>;
+type Props = React.ComponentProps<'div'>;
 
 export const RdsCard: React.FC<Props> = ({ className, children, ...props }) => {
   return (

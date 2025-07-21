@@ -1,14 +1,17 @@
-import { RdsButton, RdsInput, RdsLabel, RdsSelect } from "../../src/components/atoms";
+import { RdsButton } from "../../src/components/atoms/RdsButton";
+import { RdsInput } from "../../src/components/atoms/RdsInput";
+import { RdsInputNumber } from "../../src/components/atoms/RdsInputNumber";
+import { RdsLabel } from "../../src/components/atoms/RdsLabel";
+import { RdsSelect } from "../../src/components/atoms/RdsSelect";
 import {
   RdsCard,
+  RdsCardContent,
+  RdsCardDescription,
+  RdsCardFooter,
   RdsCardHeader,
   RdsCardTitle,
-  RdsCardDescription,
-  RdsCardContent,
-  RdsCardFooter,
-  RdsInputNumber,
-  RdsSelectSearch,
-} from "../../src/components/molecules";
+} from "../../src/components/molecules/Card";
+import { RdsSelectSearch } from "../../src/components/molecules/RdsSelectSearch";
 
 export const Example = () => {
   return (

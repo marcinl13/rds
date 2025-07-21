@@ -1,16 +1,16 @@
 {
   "name": "rds",
-  "version": "1.7.5",
+  "version": "1.8.0",
   "license": "MIT",
   "type": "module",
   "exports": {
-    "./molecules": {
-      "types": "./dist/components/molecules/index.d.ts",
-      "import": "./dist/components/molecules/index.js"
+    "./molecules/*": {
+      "types": "./dist/components/molecules/*/index.d.ts",
+      "import": "./dist/components/molecules/*/index.js"
     },
-    "./atoms": {
-      "types": "./dist/components/atoms/index.d.ts",
-      "import": "./dist/components/atoms/index.js"
+    "./atoms/*": {
+      "types": "./dist/components/atoms/*/index.d.ts",
+      "import": "./dist/components/atoms/*/index.js"
     },
     ".": {
       "types": "./dist/index.d.ts",
@@ -24,9 +24,10 @@
   "scripts": {
     "build": "rslib build",
     "build:storybook": "storybook build",
-    "check": "biome check --write",
     "dev": "rslib build --watch",
-    "format": "biome format --write",
+    "check": "biome check",
+    "lint:fix": "biome format --write",
+    "lint:fix:unsafe": "biome check --fix --unsafe",
     "storybook": "storybook dev"
   },
   "devDependencies": {

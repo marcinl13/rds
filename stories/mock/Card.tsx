@@ -1,12 +1,12 @@
-import { RdsButton } from "../../src/components/atoms";
+import { RdsButton } from "../../src/components/atoms/RdsButton";
 import {
   RdsCard,
+  RdsCardContent,
+  RdsCardDescription,
+  RdsCardFooter,
   RdsCardHeader,
   RdsCardTitle,
-  RdsCardDescription,
-  RdsCardContent,
-  RdsCardFooter,
-} from "../../src/components/molecules";
+} from "../../src/components/molecules/Card";
 
 export const MockCard: React.FC<React.ComponentProps<typeof RdsCard>> = () => (
   <RdsCard className="min-w-100 max-w-sm">

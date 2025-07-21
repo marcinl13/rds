@@ -1,1 +1,0 @@
-import*as _ from"./components/atoms/index.js";import*as o from"./components/molecules/index.js";export{_ as Atoms,o as Molecules};

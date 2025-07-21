@@ -1,5 +1,5 @@
 import { type ChangeEvent, type ComponentProps, useState } from "react";
-import { RdsInput } from "../atoms";
+import { RdsInput } from "../RdsInput";
 
 type InputNumberProps = ComponentProps<typeof RdsInput> & {
   value?: number | string;

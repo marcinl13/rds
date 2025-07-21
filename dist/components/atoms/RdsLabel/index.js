@@ -1,0 +1,1 @@
+import{RdsLabel as e}from"./RdsLabel.js";export{e as RdsLabel};

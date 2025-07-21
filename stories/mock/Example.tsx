@@ -1,4 +1,9 @@
-import { RdsButton, RdsInput, RdsLabel, RdsSelect } from "../../src/components/atoms";
+import { RdsButton } from "../../src/components/atoms/RdsButton";
+import { RdsInput } from "../../src/components/atoms/RdsInput";
+import { RdsInputNumber } from "../../src/components/atoms/RdsInputNumber";
+import { RdsLabel } from "../../src/components/atoms/RdsLabel";
+import { RdsSelect } from "../../src/components/atoms/RdsSelect";
+import { RdsSelectSearch } from "../../src/components/molecules/RdsSelectSearch";
 import {
   RdsCard,
   RdsCardContent,
@@ -6,9 +11,7 @@ import {
   RdsCardFooter,
   RdsCardHeader,
   RdsCardTitle,
-  RdsInputNumber,
-  RdsSelectSearch,
-} from "../../src/components/molecules";
+} from "../../src/components/molecules/Card";
 
 export const Example = () => {
   return (
@@ -16,17 +19,32 @@ export const Example = () => {
       <RdsCard className="flex flex-col gap-3 min-w-100">
         <div>
           <RdsLabel htmlFor="input-example">Text input example</RdsLabel>
-          <RdsInput name="input-example" placeholder="text" value="Hello" className="w-full" />
+          <RdsInput
+            name="input-example"
+            placeholder="text"
+            value="Hello"
+            className="w-full"
+          />
         </div>
 
         <div>
           <RdsLabel htmlFor="input-example">Disabled input example</RdsLabel>
-          <RdsInput name="input-example" value="Disabled" className="w-full" disabled />
+          <RdsInput
+            name="input-example"
+            value="Disabled"
+            className="w-full"
+            disabled
+          />
         </div>
 
         <div>
           <RdsLabel htmlFor="input-example">Numerical input example</RdsLabel>
-          <RdsInputNumber name="input-example" placeholder="amount" value="12" className="w-full" />
+          <RdsInputNumber
+            name="input-example"
+            placeholder="amount"
+            value="12"
+            className="w-full"
+          />
         </div>
 
         <div>
@@ -149,12 +167,16 @@ export const Example = () => {
       <RdsCard className="min-w-100">
         <RdsCardHeader>
           <RdsCardTitle>Card Title</RdsCardTitle>
-          <RdsCardDescription>Brief description or subtitle.</RdsCardDescription>
+          <RdsCardDescription>
+            Brief description or subtitle.
+          </RdsCardDescription>
         </RdsCardHeader>
         <RdsCardContent>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam itaque voluptate soluta id quidem nihil,
-            sit deserunt iusto a provident facere harum, eius omnis at similique labore possimus! Reiciendis, saepe.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+            itaque voluptate soluta id quidem nihil, sit deserunt iusto a
+            provident facere harum, eius omnis at similique labore possimus!
+            Reiciendis, saepe.
           </p>
         </RdsCardContent>
         <RdsCardFooter className="flex justify-center">

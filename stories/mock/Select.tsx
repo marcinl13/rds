@@ -1,4 +1,4 @@
-import { RdsSelect } from "../../src/components/atoms";
+import { RdsSelect } from "../../src/components/atoms/RdsSelect";
 
 export const RoleSelect: React.FC<React.ComponentProps<typeof RdsSelect>> = ({ children, ...props }) => (
   <RdsSelect {...props}>

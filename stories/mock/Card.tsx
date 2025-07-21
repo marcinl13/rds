@@ -1,4 +1,4 @@
-import { RdsButton } from "../../src/components/atoms";
+import { RdsButton } from "../../src/components/atoms/RdsButton";
 import {
   RdsCard,
   RdsCardContent,

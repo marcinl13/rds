@@ -3,7 +3,6 @@ import { RdsInput } from "../../src/components/atoms/RdsInput";
 import { RdsInputNumber } from "../../src/components/atoms/RdsInputNumber";
 import { RdsLabel } from "../../src/components/atoms/RdsLabel";
 import { RdsSelect } from "../../src/components/atoms/RdsSelect";
-import { RdsSelectSearch } from "../../src/components/molecules/RdsSelectSearch";
 import {
   RdsCard,
   RdsCardContent,
@@ -12,6 +11,7 @@ import {
   RdsCardHeader,
   RdsCardTitle,
 } from "../../src/components/molecules/Card";
+import { RdsSelectSearch } from "../../src/components/molecules/RdsSelectSearch";
 
 export const Example = () => {
   return (

@@ -1,4 +1,4 @@
-import { RdsSelectSearch } from "../../src/components/molecules";
+import { RdsSelectSearch } from "../../src/components/molecules/RdsSelectSearch";
 
 const options = [
   { value: "chocolate", label: "Chocolate" },

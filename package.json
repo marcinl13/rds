@@ -1,16 +1,16 @@
 {
   "name": "rds",
-  "version": "1.7.5",
+  "version": "1.8.0",
   "license": "MIT",
   "type": "module",
   "exports": {
-    "./molecules": {
-      "types": "./dist/components/molecules/index.d.ts",
-      "import": "./dist/components/molecules/index.js"
+    "./molecules/*": {
+      "types": "./dist/components/molecules/*/index.d.ts",
+      "import": "./dist/components/molecules/*/index.js"
     },
-    "./atoms": {
-      "types": "./dist/components/atoms/index.d.ts",
-      "import": "./dist/components/atoms/index.js"
+    "./atoms/*": {
+      "types": "./dist/components/atoms/*/index.d.ts",
+      "import": "./dist/components/atoms/*/index.js"
     },
     ".": {
       "types": "./dist/index.d.ts",

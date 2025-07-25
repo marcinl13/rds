@@ -6,7 +6,7 @@
 # latest
 yarn add rds@https://github.com/marcinl13/rds
 # or with specyfic version
-yarn add rds@https://github.com/marcinl13/rds#v1.7.0
+yarn add rds@https://github.com/marcinl13/rds#v1.8.0
 ```
 
 ## Theme usage example

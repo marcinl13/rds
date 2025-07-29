@@ -1,6 +1,8 @@
-# Rslib project
+# 🛠️ Custom React Component Library with Tailwind CSS
 
-## Package installation
+A set of reusable React components styled with Tailwind CSS.
+
+# 🚀 Package installation
 
 ```bash
 # latest
